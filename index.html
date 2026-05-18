@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitZone Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <b>FitZone</b>
+
+        <a href="#">Home</a>
+        <a href="#">Plans</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+
+        <h1>Transform Your Body</h1>
+
+        <p>Push your limits. Achieve your goals.</p>
+
+        <button>Join Now</button>
+
+    </div>
+
+    <div class="plans">
+
+        <h2>Membership Plans</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Monthly</h3>
+
+                <p>₹999 / month</p>
+
+                <button>Choose</button>
+
+            </div>
+
+            <div class="card">
+
+                <h3>3 Months</h3>
+
+                <p>₹2499</p>
+
+                <button>Choose</button>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Yearly</h3>
+
+                <p>₹8999</p>
+
+                <button>Choose</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Near Elpro City Square Mall, Chinchwad</p>
+
+        <p>📞 9876543210</p>
+
+        <p>🕒 5 AM – 11 PM, Mon–Sun</p>
+
+    </div>
+
+    <!-- Chat Button -->
+    <button id="chatBtn" onclick="toggleChat()">
+        💬 Chat
+    </button>
+
+    <!-- Chatbox -->
+    <div id="chatbox" style="display:none;">
+
+        <div id="chatHeader">
+
+            <span>FitZone Bot</span>
+
+            <button onclick="toggleChat()">X</button>
+
+        </div>
+
+        <div id="messages">
+
+            <div class="bot-message">
+                Hello! Welcome to FitZone 💪 How can I help?
+            </div>
+
+        </div>
+
+        <div id="inputArea">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type here..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
